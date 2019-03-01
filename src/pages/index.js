@@ -1,30 +1,46 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const Flex = styled.div`
+import { media } from '../media';
+import { LIGHT_GRAY, MID_GRAY } from '../colors';
+
+const HeroSection = styled.section`
   display: flex;
-  flex-direction: ${props => props.direction && props.direction || 'row'};
+  flex-direction: column;
+
+  ${media.tablet`
+    flex-direction: row;
+  `}
 `;
 
-const BigSection = ({ title, buttonText }) => {
+const StyledBigBox = styled.div `
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid ${LIGHT_GRAY};
+`;
+
+const BigBox = ({ title, buttonText }) => {
   return (
-    <Flex direction="column">
+    <StyledBigBox>
       <h2>{title}</h2>
       <div>Image place holder</div>
       <button>{buttonText}</button>
-    </Flex>
+    </StyledBigBox>
   );
 };
 
-const Wrapping = () => <BigSection title="Wrapping" buttonText="More about wrapping" />
-const DashCam = () => <BigSection title="DashCam" buttonText="More about DashCam" />
+const Wrapping = () => <BigBox title="Wrapping" buttonText="More about wrapping" />
+const DashCam = () => <BigBox title="DashCam" buttonText="More about DashCam" />
 
 export default () => (
   <div style={{ textAlign: 'center' }}>
     <h1>Home page</h1>
-    <Flex>
+    <HeroSection>
       <Wrapping />
       <DashCam />
-    </Flex>
+    </HeroSection>
   </div>
 )
