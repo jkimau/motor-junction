@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import GlobalStyles from './GlobalStyles';
 import { media } from './media';
 import HomeContent from './pages/index';
-import Footer from './components/Footer'
 
 const LogoWrapper = styled.div`
   padding: 20px 0;
