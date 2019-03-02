@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default {
-  siteRoot: "https://jkimau.github.io/motor-junction/",
-  basePath: "/",
+  siteRoot: "https://jkimau.github.io/motor-junction",
+  basePath: "motor-junction",
   beforeRenderToHtml: (render, Comp, meta) => {
     const sheet = new ServerStyleSheet();
     const html = render(sheet.collectStyles(<Comp />));
