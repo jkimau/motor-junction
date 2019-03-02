@@ -24,7 +24,7 @@ export default () => (
                 <Li>Protect the vehicle body paintwork and help hold the resale value of your vehicle.</Li>
             </Ul>
             <div>
-                <Thumbnail subTitle="test title" description="test description"/>
+                <Thumbnail description="test description"/>
             </div>
         </div>
 

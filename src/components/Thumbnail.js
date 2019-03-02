@@ -10,21 +10,21 @@ const ThumbnailBox = styled.div`
 `;
 
 const ImgPlaceHolder = styled.div`
-    width: 300px;
-    height: 300px;
+    width: ${props => props.width ? props.width : '300'}px;
+    height: ${props => props.width ? props.width : '300'}px;;
     background-color: ${LIGHT_GRAY};
 `; 
 
-export default ({ imgUrl, subTitle, description }) => {
-    const ImageWrapper = imgUrl ? <img src={imgUrl} /> : <ImgPlaceHolder />;
-    console.log('ImageWrapper : ', ImageWrapper)
+export default ({ width, imgUrl, subTitle, description, children }) => {
+    const ImageWrapper = imgUrl ? <img src={imgUrl} /> : <ImgPlaceHolder width={width}/>;
 
     return (
         <ThumbnailBox>
             {ImageWrapper}
             <div>
-                <h3>{subTitle}</h3>
-                <p>{description}</p>
+                {subTitle && <h3>{subTitle}</h3>}
+                {description && <p>{description}</p>}
+                {children}
             </div>
         </ThumbnailBox>
     );
