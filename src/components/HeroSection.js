@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { media } from '../media';
-import { LIGHT_GRAY, PINK, DARK_PINK, WHITE } from '../colors';
+import { LIGHT_GRAY, WHITE, GLOBAL_GOLD, GLOBAL_BG } from '../colors';
 import { DASHCAM_THUMBNAIL_BASE_URL } from './DashCamSection';
 
 const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   ${media.tablet`
     flex-direction: row;
@@ -29,13 +30,10 @@ const StyledBigBox = styled.div`
 const HeroButton = styled.a`
   padding: 10px;
   border-radius: 2px;
-  color: ${WHITE};
-  background-color: ${PINK};
+  color: ${GLOBAL_BG};
+  background-color: ${GLOBAL_GOLD};
   cursor: pointer;
-
-  &:hover {
-    background-color: ${DARK_PINK};
-  }
+  text-align: center;
 `;
 
 const BigBoxTitle = styled.h2`

@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+import { GLOBAL_GOLD, GLOBAL_BG } from './colors';
+
 export default createGlobalStyle`
     body {
         font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
@@ -8,8 +10,8 @@ export default createGlobalStyle`
         font-size: 16px;
         margin: 0;
         padding: 0;
-        background-color: #111312;
-        color: #E3C163;
+        background-color: ${GLOBAL_BG};
+        color: ${GLOBAL_GOLD};
         line-height: 1.5;
     }
     
