@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from '@reach/router'
 import styled from 'styled-components';
 
 import { media } from '../media';
@@ -40,20 +39,22 @@ const BigBox = ({ title, buttonText, to }) => {
     <StyledBigBox>
       <h2>{title}</h2>
       <div>Image place holder</div>
-      <Link to={to}><HeroButton>{buttonText}</HeroButton></Link>
+      <HeroButton>{buttonText}</HeroButton>
     </StyledBigBox>
   );
 };
 
-const Wrapping = () => <BigBox title="Wrapping" buttonText="More about wrapping" to="/wrapping" />
-const DashCam = () => <BigBox title="DashCam" buttonText="More about DashCam" to="/dashcam" />
+const Wrapping = () => <BigBox title="Wrapping" buttonText="Go Wrapping" to="/wrapping" />
+const DashCam = () => <BigBox title="DashCam" buttonText="Go DashCam" to="/dashcam" />
 
 export default () => (
-  <div style={{ textAlign: 'center' }}>
-    <h1>Home page</h1>
-    <HeroSection>
-      <Wrapping />
-      <DashCam />
-    </HeroSection>
-  </div>
+    <div>
+      <h1>Motor Junction</h1>
+      <p>Automotive Workshop , Quality Vinyl Wrapping, 2 Channel Dash Cam Sale & Installation in Moorabbin
+Opening at 08:00 on Monday</p>
+      <HeroSection>
+        <Wrapping />
+        <DashCam />
+      </HeroSection>
+    </div>
 )

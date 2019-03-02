@@ -1,20 +1,18 @@
-import React from 'react'
-import { Root, Routes } from 'react-static'
-import { Link } from '@reach/router'
+import React from 'react';
+import { Root, Routes } from 'react-static';
 
-import './app.css'
+import GlobalStyles from './GlobalStyles';
+import HomeContent from './pages/index';
 
 function App() {
   return (
     <Root>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/wrapping">Wrapping</Link>
-        <Link to="/test">Test</Link>
-      </nav>
-      <div className="content">
-        <Routes />
+      <GlobalStyles />
+      <div>Header</div>
+      <div className="content" style={{ textAlign: 'center' }}>
+        <HomeContent />
       </div>
+      <div>Footer</div>
     </Root>
   )
 }
