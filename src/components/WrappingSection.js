@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import Thumbnail from './Thumbnail';
 
-const FULL_WRAPPING_THUMBNAIL_BASE_URL = "./images/thumbnails/wrapping/full";
+export const FULL_WRAPPING_THUMBNAIL_BASE_URL = "./images/thumbnails/wrapping/full";
 
 const ThumbnailWrapper = styled.div`
     display: flex;

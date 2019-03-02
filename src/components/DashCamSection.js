@@ -5,7 +5,7 @@ import { media } from '../media';
 import SectionTitle from './SectionTitle';
 import Thumbnail from './Thumbnail';
 
-const DASHCAM_THUMBNAIL_BASE_URL = "./images/thumbnails/dashcam";
+export const DASHCAM_THUMBNAIL_BASE_URL = "./images/thumbnails/dashcam";
 
 const ThumbnailWrapper = styled.div`
     display: flex;
