@@ -18,12 +18,16 @@ const Ul = styled.ul`
 
 const Li = styled.li``;
 
+export const H3 = styled.h3`
+    text-decoration: underline;
+`;
+
 export default () => (
     <section id="wrapping">
         <SectionTitle title="Car Wrapping"></SectionTitle>
 
         <div>
-            <h3>Full Wraps</h3>
+            <H3>Full Wraps</H3>
             <p>For those who want to go the full distance in terms of changing up your vehicle, this is for you. Full car wraps are the most expensive car wrapping option and can take days to complete depending on the material used and the vehicle being wrapped. It is essential to use the most skilled installers for your full wrap. Full car wraps can be used to:</p>
             <Ul>
                 <Li>Completely change the whole look and style of your vehicle – the difference is night and day.</Li>
@@ -32,17 +36,17 @@ export default () => (
                 <Li>Protect the vehicle body paintwork and help hold the resale value of your vehicle.</Li>
             </Ul>
             <ThumbnailWrapper>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/camo-BMW-M4.jpg`} description="test description"/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-aventador-2.jpg`} description="test description"/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-aventador.jpg`} description="test description"/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-gallardo-2.jpg`} description="test description"/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-gallardo.jpg`} description="test description"/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-murcielago.jpg`} description="test description"/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/camo-BMW-M4.jpg`} description=""/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-aventador-2.jpg`} description=""/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-aventador.jpg`} description=""/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-gallardo-2.jpg`} description=""/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-gallardo.jpg`} description=""/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-murcielago.jpg`} description=""/>
             </ThumbnailWrapper>
         </div>
 
         <div>
-            <h3>Partial Wraps</h3>
+            <H3>Partial Wraps</H3>
             <p>Suggested applicable area:</p>
             <Ul>
                 <Li>Side mirrors</Li>
@@ -57,7 +61,7 @@ export default () => (
         </div>
 
         <div>
-            <h3>Roof Wraps</h3>
+            <H3>Roof Wraps</H3>
             <p>Roof wraps are used to add patterns to vehicles or to streamline the design and look of the vehicle by adding a dark contrasting colour. Using a finish of carbon fibre can visibly add to the quality and look of a vehicle, especially high end models. Whatever your choice is, though, roof wraps can help:</p>
             <Ul>
                 <Li>Change the overall look and feel of your vehicle.</Li>
@@ -68,7 +72,7 @@ export default () => (
         </div>
 
         <div>
-            <h3>PPF (Paint protection film)</h3>
+            <H3>PPF (Paint protection film)</H3>
             <p>Paint protection kits are a totally clear and invisible way of protecting your car bodywork from general wear and tear, stone chips and minor abrasions. Suggested applicable area:</p>
             <Ul>
                 <Li>Head lights</Li>
@@ -80,7 +84,7 @@ export default () => (
         </div>
 
         <div>
-            <h3>Headlight & Taillight Tinting</h3>
+            <H3>Headlight & Taillight Tinting</H3>
         </div>
     </section>
 )
