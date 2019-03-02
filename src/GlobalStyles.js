@@ -8,6 +8,8 @@ export default createGlobalStyle`
         font-size: 16px;
         margin: 0;
         padding: 0;
+        background-color: #111312;
+        color: #E3C163;
     }
     
     a {

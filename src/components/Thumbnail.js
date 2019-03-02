@@ -13,10 +13,15 @@ const ImgPlaceHolder = styled.div`
     width: ${props => props.width ? props.width : '300'}px;
     height: ${props => props.width ? props.width : '300'}px;;
     background-color: ${LIGHT_GRAY};
-`; 
+`;
+
+const Img = styled.img`
+    width: 100%;
+`;
 
 export default ({ width, imgUrl, subTitle, description, children }) => {
-    const ImageWrapper = imgUrl ? <img src={imgUrl} /> : <ImgPlaceHolder width={width}/>;
+    console.log('imgUrl :: ', imgUrl)
+    const ImageWrapper = imgUrl ? <Img src={imgUrl} alt={description} /> : <ImgPlaceHolder width={width}/>;
 
     return (
         <ThumbnailBox>

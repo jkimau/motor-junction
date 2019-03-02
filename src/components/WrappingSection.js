@@ -4,6 +4,14 @@ import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import Thumbnail from './Thumbnail';
 
+const FULL_WRAPPING_THUMBNAIL_BASE_URL = "./images/thumbnails/wrapping/full";
+
+const ThumbnailWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+`;
+
 const Ul = styled.ul`
     ${props => props.listStyle && `list-style: ${props.listStyle}`}
 `;
@@ -12,7 +20,7 @@ const Li = styled.li``;
 
 export default () => (
     <section id="wrapping">
-        <SectionTitle title="Wrapping"></SectionTitle>
+        <SectionTitle title="Car Wrapping"></SectionTitle>
 
         <div>
             <h3>Full Wraps</h3>
@@ -23,9 +31,14 @@ export default () => (
                 <Li>Be unique and take your car to a new level with a textured material.</Li>
                 <Li>Protect the vehicle body paintwork and help hold the resale value of your vehicle.</Li>
             </Ul>
-            <div>
-                <Thumbnail description="test description"/>
-            </div>
+            <ThumbnailWrapper>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/camo-BMW-M4.jpg`} description="test description"/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-aventador-2.jpg`} description="test description"/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-aventador.jpg`} description="test description"/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-gallardo-2.jpg`} description="test description"/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-gallardo.jpg`} description="test description"/>
+                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-murcielago.jpg`} description="test description"/>
+            </ThumbnailWrapper>
         </div>
 
         <div>
