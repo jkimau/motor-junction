@@ -19,4 +19,5 @@ export default {
       <Body>{children}</Body>
     </Html>
   ),
+  plugins: ["react-static-plugin-styled-components"]
 }
