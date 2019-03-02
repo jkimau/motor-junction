@@ -9,7 +9,7 @@ function App() {
     <Root>
       <GlobalStyles />
       <div>Header</div>
-      <div className="content" style={{ textAlign: 'center' }}>
+      <div className="content">
         <HomeContent />
       </div>
       <div>Footer</div>
