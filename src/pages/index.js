@@ -20,13 +20,19 @@ const HomeContentWrapper = styled.div`
   margin-top: -50px;
 `;
 
+const Gutter = styled.div`
+    height: 50px;
+`;
+
 export default () => (
     <HomeContentWrapper>
       <HiddenH1>Motor Junction</HiddenH1>
       <CompanyDescription>Automotive Workshop , Quality Vinyl Wrapping, 2 Channel Dash Cam Sale & Installation in Moorabbin
 Opening at 08:00 on Monday</CompanyDescription>
       <HeroSection />
+      <Gutter />
       <WrappingSection />
+      <Gutter />
       <DashCamSection />
     </HomeContentWrapper>
 )
