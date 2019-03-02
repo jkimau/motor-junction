@@ -10,6 +10,7 @@ export default createGlobalStyle`
         padding: 0;
         background-color: #111312;
         color: #E3C163;
+        line-height: 1.5;
     }
     
     a {
