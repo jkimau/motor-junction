@@ -36,7 +36,7 @@ const Ul = styled.ul`
 
 const Cls740Spec = () => (
     <Ul>
-        <li>2 Channel</li>
+        <li>2 Channel(Front/Rear)</li>
         <li>QHD/Full HD (1440p/1080p)</li>
         <li>Wireless connectivity(WiFi)</li>
         <li>32GB Memory card supplied</li>
@@ -44,13 +44,12 @@ const Cls740Spec = () => (
         <li>Car Battery Discharge Protection</li>
         <li>Security LED</li>
         <li>Apple iOS/Android compatible</li>
-        <li>Autido On/Off</li>
     </Ul>
 );
 
 const FxAirSpec = () => (
     <Ul>
-        <li>2 Channel</li>
+        <li>2 Channel(Front/Rear)</li>
         <li>Full HD/Full HD (1080p/1080p)</li>
         <li>Sony EXMOR CMOS image sensor</li>
         <li>Wireless connectivity(WiFi)</li>
@@ -60,20 +59,18 @@ const FxAirSpec = () => (
         <li>Car Battery Discharge Protection</li>
         <li>Security LED</li>
         <li>Apple iOS/Android compatible</li>
-        <li>Autido On/Off</li>
     </Ul>
 );
 
 const Hx200Spec = () => (
     <Ul>
-        <li>2 Channel</li>
+        <li>2 Channel(Front/Rear)</li>
         <li>HD/HD (720p/720p)</li>
         <li>3.5" Full touch LCD (480*320)</li>
         <li>16GB Memory card supplied</li>
         <li>128GB Upgradable</li>
         <li>Car Battery Discharge Protection</li>
         <li>Security LED</li>
-        <li>Autido On/Off</li>
     </Ul>
 );
 

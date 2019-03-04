@@ -8,10 +8,11 @@ import { DASHCAM_THUMBNAIL_BASE_URL } from './DashCamSection';
 const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  align-items: center;
+  
   ${media.tablet`
     flex-direction: row;
+    justify-content: center;
   `}
 `;
 
@@ -48,7 +49,7 @@ const BigBoxDescription = styled.div`
 `;
 
 const Img = styled.img`
-  width: 100%;
+  width: 360px;
 `;
 
 const BigBox = ({ title, description, imgUrl, buttonText }) => {

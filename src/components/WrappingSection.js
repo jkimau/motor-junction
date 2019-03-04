@@ -35,7 +35,7 @@ export default () => (
             <H3>Full Wraps</H3>
             <p>For those who want to go the full distance in terms of changing up your vehicle, this is for you. Full car wraps are the most expensive car wrapping option and can take days to complete depending on the material used and the vehicle being wrapped. It is essential to use the most skilled installers for your full wrap. Full car wraps can be used to:</p>
             <Ul>
-                <Li>Completely change the whole look and style of your vehicle – the difference is night and day.</Li>
+                <Li>Completely change the whole look and style of your vehicle</Li>
                 <Li>Convert your car to a completely different colour, without all of the long delays that can hold back getting your car in shape as well as the extreme costs.</Li>
                 <Li>Be unique and take your car to a new level with a textured material.</Li>
                 <Li>Protect the vehicle body paintwork and help hold the resale value of your vehicle.</Li>
@@ -89,6 +89,7 @@ export default () => (
             <H3>PPF (Paint protection film)</H3>
             <p>Paint protection kits are a totally clear and invisible way of protecting your car bodywork from general wear and tear, stone chips and minor abrasions. Suggested applicable area:</p>
             <Ul>
+                <Li>Full front package available which includes bonnet, bumper bar and guards</Li>
                 <Li>Head lights</Li>
                 <Li>Door edges</Li>
                 <Li>Door cup</Li>

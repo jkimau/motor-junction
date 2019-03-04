@@ -12,7 +12,7 @@ const HiddenH1 = styled.h1`
 `;
 
 const CompanyDescription = styled.p`
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
 `;
@@ -42,8 +42,8 @@ const Address = styled.div`
 export default () => (
     <HomeContentWrapper>
       <HiddenH1>Motor Junction</HiddenH1>
-      <CompanyDescription>One stop Automotive Workshop, All mechanical works, Quality Vinyl Wrapping, 2 Channel Dash Cam Sale & Installation
-opening from 08:00 - 17:00 /  Monday - Friday</CompanyDescription>
+      <CompanyDescription>One stop Automotive Workshop.<br/>All mechanical works, Quality Vinyl Wrapping, 2 Channel Dash Cam Sale & Installation
+      <br/>opening from 8am to 5pm, Monday to Friday</CompanyDescription>
       <ContacSection>
         <a href="tel:03 9553 1344">03 9553 1344</a>
         <Address>81 Keys Rd Moorabbin VIC 3189</Address>

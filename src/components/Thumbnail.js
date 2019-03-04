@@ -15,13 +15,16 @@ const ImgPlaceHolder = styled.div`
     background-color: ${LIGHT_GRAY};
 `;
 
+const ImgWrapper = styled.div`
+    min-height: 200px;
+`;
+
 const Img = styled.img`
     width: 100%;
 `;
 
 export default ({ width, imgUrl, subTitle, description, children }) => {
-    console.log('imgUrl :: ', imgUrl)
-    const ImageWrapper = imgUrl ? <Img src={imgUrl} alt={description} /> : <ImgPlaceHolder width={width}/>;
+    const ImageWrapper = imgUrl ? <ImgWrapper><Img src={imgUrl} alt={description} /></ImgWrapper> : <ImgPlaceHolder width={width}/>;
 
     return (
         <ThumbnailBox>
