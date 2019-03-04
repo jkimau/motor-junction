@@ -15,7 +15,8 @@ export default {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Motor Junction</title>
+        <meta name="google-site-verification" content="Ot0aDRMpcZfC_zJCpjLWwV9PMaoqSfirm92LgaE-QjI" />
+        <title>Motor Junction - One stop automotive shop</title>
       </Head>
       <Body>{children}</Body>
     </Html>
