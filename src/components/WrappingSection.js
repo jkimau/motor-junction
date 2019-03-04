@@ -3,13 +3,18 @@ import styled from 'styled-components';
 
 import SectionTitle from './SectionTitle';
 import Thumbnail from './Thumbnail';
+import { media } from '../media';
 
-export const FULL_WRAPPING_THUMBNAIL_BASE_URL = "./images/thumbnails/wrapping/full";
+export const WRAPPING_THUMBNAIL_BASE_URL = "./images/thumbnails/wrapping";
 
 const ThumbnailWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    ${media.tablet`
+        justify-content: flex-start;
+    `}
 `;
 
 const Ul = styled.ul`
@@ -36,12 +41,12 @@ export default () => (
                 <Li>Protect the vehicle body paintwork and help hold the resale value of your vehicle.</Li>
             </Ul>
             <ThumbnailWrapper>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/camo-BMW-M4.jpg`} description=""/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-aventador-2.jpg`} description=""/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-aventador.jpg`} description=""/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-gallardo-2.jpg`} description=""/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-gallardo.jpg`} description=""/>
-                <Thumbnail imgUrl={`${FULL_WRAPPING_THUMBNAIL_BASE_URL}/lamborghini-murcielago.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/camo-bmw-m4.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-aventador-2.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-aventador.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-gallardo-2.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-gallardo.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-murcielago.jpg`} description=""/>
             </ThumbnailWrapper>
         </div>
 
@@ -58,6 +63,11 @@ export default () => (
                 <Li>Add a simple contrast to the look of your car without going over the top and making your car seem too loud.</Li>
                 <Li>Add minor texturing to your vehicle styling with a finish such as carbon fibre to really add another layer of class to the overall design.</Li>
             </Ul>
+            <ThumbnailWrapper>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/partial/partial-maserati.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/partial/partial-wrap.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/partial/partial-wrap-2.jpg`} description=""/>
+            </ThumbnailWrapper>
         </div>
 
         <div>
@@ -69,6 +79,10 @@ export default () => (
                 <Li>Use textured materials that interact with light differently.</Li>
                 <Li>Provide protection to the paintwork below.</Li>
             </Ul>
+            <ThumbnailWrapper>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/roof/roof-rangerover.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/roof/roof-stinger.jpg`} description=""/>
+            </ThumbnailWrapper>
         </div>
 
         <div>
@@ -81,10 +95,18 @@ export default () => (
                 <Li>Fuel cap lid</Li>
                 <Li>Boot area</Li>
             </Ul>
+            <ThumbnailWrapper>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/ppf/ppf-jaguar.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/ppf/ppf-porsche.jpg`} description=""/>
+            </ThumbnailWrapper>
         </div>
 
         <div>
             <H3>Headlight & Taillight Tinting</H3>
+            <ThumbnailWrapper>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/tinting/taillight-tinting-before.jpg`} description="Before"/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/tinting/taillight-tinting-after.jpg`} description="After"/>
+            </ThumbnailWrapper>
         </div>
     </section>
 )
