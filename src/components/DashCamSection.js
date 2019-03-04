@@ -89,13 +89,13 @@ export default () => (
         </div>
 
         <ThumbnailWrapper>
-            <Thumbnail width={200} imgUrl={`${DASHCAM_THUMBNAIL_BASE_URL}/cls-740.png`} subTitle="CLS-740">
+            <Thumbnail width={200} source="dashcam" imgUrl={`${DASHCAM_THUMBNAIL_BASE_URL}/cls-740.png`} subTitle="CLS-740">
                 <Cls740Spec />
             </Thumbnail>
-            <Thumbnail width={200} imgUrl={`${DASHCAM_THUMBNAIL_BASE_URL}/fx-air.jpg`} subTitle="FX Air">
+            <Thumbnail width={200} source="dashcam" imgUrl={`${DASHCAM_THUMBNAIL_BASE_URL}/fx-air.jpg`} subTitle="FX Air">
                 <FxAirSpec />
             </Thumbnail>
-            <Thumbnail width={200} imgUrl={`${DASHCAM_THUMBNAIL_BASE_URL}/hx-200.png`} subTitle="HX-200">
+            <Thumbnail width={200} source="dashcam" imgUrl={`${DASHCAM_THUMBNAIL_BASE_URL}/hx-200.png`} subTitle="HX-200">
                 <Hx200Spec />
             </Thumbnail>
         </ThumbnailWrapper>

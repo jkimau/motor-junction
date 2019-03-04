@@ -18,7 +18,7 @@ const ImgPlaceHolder = styled.div`
 
 const ImgWrapper = styled.div`
     ${media.tablet`
-        min-height: 250px;
+        min-height: ${props => props.source && props.source === 'dashcam' ? '250px' : '0'};
     `}
 `;
 
@@ -26,8 +26,8 @@ const Img = styled.img`
     width: 100%;
 `;
 
-export default ({ width, imgUrl, subTitle, description, children }) => {
-    const ImageWrapper = imgUrl ? <ImgWrapper><Img src={imgUrl} alt={description} /></ImgWrapper> : <ImgPlaceHolder width={width}/>;
+export default ({ width, imgUrl, subTitle, description, source, children }) => {
+    const ImageWrapper = imgUrl ? <ImgWrapper source={source}><Img src={imgUrl} alt={description} /></ImgWrapper> : <ImgPlaceHolder width={width}/>;
 
     return (
         <ThumbnailBox>
