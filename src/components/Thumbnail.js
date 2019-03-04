@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { LIGHT_GRAY } from '../colors';
+import { media } from '../media';
 
 const ThumbnailBox = styled.div`
     box-sizing: border-box;
@@ -16,7 +17,9 @@ const ImgPlaceHolder = styled.div`
 `;
 
 const ImgWrapper = styled.div`
-    min-height: 200px;
+    ${media.tablet`
+        min-height: 250px;
+    `}
 `;
 
 const Img = styled.img`
