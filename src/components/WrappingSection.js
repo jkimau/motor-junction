@@ -45,7 +45,7 @@ export default () => (
                 <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-aventador-2.jpg`} description=""/>
                 <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-aventador.jpg`} description=""/>
                 <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-gallardo-2.jpg`} description=""/>
-                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-gallardo.jpg`} description=""/>
+                <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/sl500.jpg`} description=""/>
                 <Thumbnail imgUrl={`${WRAPPING_THUMBNAIL_BASE_URL}/full/lamborghini-murcielago.jpg`} description=""/>
             </ThumbnailWrapper>
         </div>
