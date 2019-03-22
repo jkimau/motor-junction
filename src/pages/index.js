@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import HeroSection from '../components/HeroSection';
 import WrappingSection from '../components/WrappingSection';
 import DashCamSection from '../components/DashCamSection';
+import Sns from '../components/Sns';
 import { GLOBAL_GOLD } from '../colors';
 
 const HiddenH1 = styled.h1`
@@ -48,6 +49,7 @@ export default () => (
         <a href="tel:03 9553 1344">03 9553 1344</a>
         <Address>81 Keys Rd Moorabbin VIC 3189</Address>
       </ContacSection>
+      <Sns />
       <HeroSection />
       <Gutter />
       <WrappingSection />
